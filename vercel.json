@@ -12,10 +12,6 @@
       "dest": "/website/landing-page/index.html"
     },
     {
-      "src": "/(logo\.svg|index\.html)",
-      "dest": "/website/landing-page/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/website/landing-page/$1"
     }
