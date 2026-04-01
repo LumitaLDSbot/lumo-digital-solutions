@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "website/landing-page/index.html",
+      "src": "website/landing-page/**/*",
       "use": "@vercel/static"
     }
   ],
@@ -12,9 +12,12 @@
       "dest": "/website/landing-page/index.html"
     },
     {
+      "src": "/(logo\.svg|index\.html)",
+      "dest": "/website/landing-page/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/website/landing-page/$1"
     }
-  ],
-  "outputDirectory": "website/landing-page"
+  ]
 }
